@@ -1,0 +1,32 @@
+__pycache__
+.cog
+cache
+vae-cache
+
+
+# Ignore model checkpoints
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Ignore datasets and logs
+data/
+logs/
+wandb/
+
+# Ignore cache files
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Ignore environment files
+venv/
+.rv_env/
+*.log
+
+# Ignore Hugging Face models
+huggingface/
+diffusers-cache/

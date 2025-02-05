@@ -1,0 +1,31 @@
+# #LIA
+# ipython==7.21.0
+# torch==1.10.1
+# torchvision==0.11.2
+# moviepy==1.0.3
+# tensorboard==2.9.1
+# tqdm==4.62.3
+# av==9.2.0
+# opencv-python==4.10.0.84
+# #numpy==2.0.0
+
+#LIA
+ipython==7.23.1
+torch==2.1
+torchvision==0.16.0
+moviepy==1.0.3
+tensorboard==2.9.1
+tqdm==4.66.3
+av==9.2.0
+opencv-python==4.10.0.84
+#numpy==2.0.0
+
+#anonymization
+huggingface_hub<0.26.0
+diffusers==0.25.1
+transformers==4.46.1
+ipykernel==6.29.5
+face-alignment==1.4.1
+accelerate==1.0.1
+datasets==3.1.0
+xformers==0.0.22.post7
