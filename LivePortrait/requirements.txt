@@ -1,0 +1,4 @@
+-r requirements_base.txt
+
+onnxruntime-gpu==1.16.1
+transformers==4.38.0
