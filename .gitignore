@@ -30,3 +30,70 @@ venv/
 # Ignore Hugging Face models
 huggingface/
 diffusers-cache/
+
+# Ignore everything by default
+*
+
+# ========== INCLUDE ONLY WHAT YOU WANT ==========
+
+# Safe requirements
+!28_03_25_safe_reqs.txt
+
+# Keep AnonHead
+!AnonHead/
+!AnonHead/**
+
+# Python scripts
+!celebahq_inf_male_abl.py
+!celebahq_inf_male.py
+!celebahq_inf.py
+!celebv_source_image_anon_leftover.py
+!celebv_source_image_anon.py
+!clean_folders.py
+!hdtf_clean_batches.py
+!lfw_image_anon.py
+!post_process_vox.py
+!trial.py
+!voxceleb_train_lowres.py
+!voxceleb_train.py
+
+# Folders
+!Generation/
+!Generation/**
+!LivePortrait/
+!LivePortrait/**
+!source_images/
+!source_images/**
+!video_preprocess_datacreation/
+!video_preprocess_datacreation/**
+
+# ========== EXPLICITLY IGNORE JUNK FILES ==========
+
+# Common file types to ignore
+*.mp4
+*.MP4
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+*.csv
+*.CSV
+
+# Model weights (common formats)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pb
+
+# Bytecode and cache
+__pycache__/
+*.pyc
+
+# Misc
+.DS_Store
+Thumbs.db
+
