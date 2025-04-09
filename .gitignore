@@ -1,49 +1,10 @@
-__pycache__
-.cog
-cache
-vae-cache
-
-
-# Ignore model checkpoints
-*.ckpt
-*.safetensors
-*.pt
-*.pth
-*.bin
-
-# Ignore datasets and logs
-data/
-logs/
-wandb/
-
-# Ignore cache files
-__pycache__/
-*.pyc
-*.pyo
-.DS_Store
-
-# Ignore environment files
-venv/
-.rv_env/
-*.log
-
-# Ignore Hugging Face models
-huggingface/
-diffusers-cache/
-
-# Ignore everything by default
+# ========= Ignore everything by default =========
 *
 
-# ========== INCLUDE ONLY WHAT YOU WANT ==========
+# ========= Keep ONLY these files and folders =========
 
-# Safe requirements
+# ✅ Keep top-level files
 !28_03_25_safe_reqs.txt
-
-# Keep AnonHead
-!AnonHead/
-!AnonHead/**
-
-# Python scripts
 !celebahq_inf_male_abl.py
 !celebahq_inf_male.py
 !celebahq_inf.py
@@ -57,19 +18,34 @@ diffusers-cache/
 !voxceleb_train_lowres.py
 !voxceleb_train.py
 
-# Folders
+# ✅ Keep folders and their contents
+!AnonHead/
+!AnonHead/**
+
 !Generation/
 !Generation/**
+
 !LivePortrait/
 !LivePortrait/**
+
 !source_images/
 !source_images/**
+
 !video_preprocess_datacreation/
 !video_preprocess_datacreation/**
 
-# ========== EXPLICITLY IGNORE JUNK FILES ==========
+# ========= STILL ignore these file types everywhere =========
 
-# Common file types to ignore
+# Model checkpoints
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.onnx
+*.pb
+
+# Videos, images, data files
 *.mp4
 *.MP4
 *.jpg
@@ -80,20 +56,27 @@ diffusers-cache/
 *.PNG
 *.csv
 *.CSV
-
-# Model weights (common formats)
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.pb
+*.npy
+*.npz
 
 # Bytecode and cache
 __pycache__/
 *.pyc
+*.pyo
 
-# Misc
+# Logs and runtime junk
+*.log
 .DS_Store
 Thumbs.db
 
+# Ignore folders not in final list
+cache/
+vae-cache/
+wandb/
+data/
+logs/
+.cog/
+huggingface/
+diffusers-cache/
+venv/
+.rv_env/
